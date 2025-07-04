@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/soft_gradient_background"
+    android:padding="24dp">
+
+    <!-- Header Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_card_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 Result Station"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See what you sent and send something back!"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Received Data Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_card_background"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📨 Message received:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/displayintentextra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="serif"
+            android:background="@drawable/sketch_content_card"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+    <!-- Return Value Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_card_background"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💌 Send a reply:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/returnValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sketch_input_field_selector"
+            android:hint="✏️ Type your magical reply here..."
+            android:textSize="16sp"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:minHeight="60dp"
+            android:gravity="center_vertical">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <!-- Action Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sketch_button_green_selector"
+            android:text="🏠 Return to Main"
+            android:textColor="@color/soft_black"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:onClick="onFinishClick"
+            android:elevation="4dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lab2intent" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Soft, friendly color palette -->
+        <item name="colorPrimary">@color/primary_pink</item>
+        <item name="colorPrimaryContainer">@color/accent_coral</item>
+        <item name="colorSecondary">@color/primary_blue</item>
+        <item name="colorSecondaryContainer">@color/accent_lavender</item>
+        <item name="android:colorAccent">@color/accent_mint</item>
+        <item name="colorSurface">@color/soft_white</item>
+        <item name="android:colorBackground">@color/soft_gray</item>
+        <item name="colorOnPrimary">@color/soft_black</item>
+        <item name="colorOnSecondary">@color/soft_black</item>
+        <item name="colorOnSurface">@color/soft_black</item>
+        <item name="colorOnBackground">@color/soft_black</item>
+        <item name="android:windowBackground">@color/soft_white</item>
+        <item name="android:textColor">@color/soft_black</item>
+        <item name="android:textColorHint">@color/dark_gray</item>
+    </style>
+
+    <style name="Theme.Lab2intent" parent="Base.Theme.Lab2intent" />
+</resources>

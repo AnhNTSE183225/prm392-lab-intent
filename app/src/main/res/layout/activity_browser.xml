@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_background"
+    android:padding="24dp">
+
+    <!-- Header Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_card_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌐 Magic Browser"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetching web content with a sprinkle of magic!"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="serif"
+            android:textStyle="italic"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Content Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sketch_card_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📄 Web Content:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/soft_black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/browserTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/soft_black"
+                android:fontFamily="monospace"
+                android:padding="16dp"
+                android:background="@color/pastel_yellow"
+                android:text="🔄 Loading magical content..." />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

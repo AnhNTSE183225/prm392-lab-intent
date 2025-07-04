@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soft_gradient_background">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        tools:context=".MainActivity">
+
+        <!-- Title Card -->
+        <LinearLayout
+            android:id="@+id/titleCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sketch_card_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨ Intent Adventures ✨"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/soft_black"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discover the magic of Android intents!"
+                android:textSize="16sp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <!-- Input Section -->
+        <LinearLayout
+            android:id="@+id/inputSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleCard"
+            android:background="@drawable/sketch_card_background"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝 Write your message:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/soft_black"
+                android:fontFamily="serif"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/inputforintent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sketch_input_field_selector"
+                android:text="First Activity"
+                android:textSize="18sp"
+                android:textColor="@color/soft_black"
+                android:hint="✏️ Enter your magical message here..."
+                android:fontFamily="serif"
+                android:minHeight="60dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <!-- Exercise Buttons Section -->
+        <LinearLayout
+            android:id="@+id/buttonsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputSection"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎯 Choose your adventure:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/soft_black"
+                android:fontFamily="serif"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/startintent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/sketch_button_pink_selector"
+                android:onClick="onClick"
+                android:text="🚀 Exercise 6: Explicit Intent"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/sharebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/sketch_button_blue_selector"
+                android:onClick="shareData"
+                android:text="📤 Exercise 7: Share Data"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/openBrowserButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/sketch_button_green_selector"
+                android:onClick="openBrowser"
+                android:text="🌐 Exercise 8: Open Browser"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/pickImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/sketch_button_yellow_selector"
+                android:onClick="pickImage"
+                android:text="🖼️ Exercise 9: Pick Image"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/implicitIntentsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/sketch_button_purple_selector"
+                android:onClick="showImplicitIntents"
+                android:text="✨ Exercise 10: Implicit Intents"
+                android:textColor="@color/soft_black"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+        <!-- Image Display Section -->
+        <LinearLayout
+            android:id="@+id/imageSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonsSection"
+            android:background="@drawable/sketch_card_background"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎨 Your selected artwork:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/soft_black"
+                android:fontFamily="serif"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/selectedImage"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:background="@drawable/sketch_image_frame"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:elevation="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📸 No image selected yet"
+                android:textSize="14sp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
