@@ -4,73 +4,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/soft_gradient_background"
-    android:padding="24dp">
+    android:padding="32dp">
 
-    <!-- Header Card -->
-    <LinearLayout
+    <!-- Header -->
+    <TextView
+        style="@style/SwissText.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginBottom="24dp">
+        android:text="BROWSER"
+        android:textSize="36sp"
+        android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🌐 Magic Browser"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="8dp" />
+    <TextView
+        style="@style/SwissText.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web content viewer"
+        android:layout_marginBottom="48dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fetching web content with a sprinkle of magic!"
-            android:textSize="14sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:textStyle="italic"
-            android:gravity="center" />
+    <!-- Content Display -->
+    <TextView
+        style="@style/SwissText.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WEB CONTENT"
+        android:layout_marginBottom="16dp" />
 
-    </LinearLayout>
-
-    <!-- Content Card -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical">
+        android:background="@drawable/sketch_input_field_selector"
+        android:padding="2dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="📄 Web Content:"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="16dp" />
-
-        <ScrollView
+            android:id="@+id/browserTextView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/swiss_near_black"
+            android:fontFamily="monospace"
+            android:padding="16dp"
+            android:text="Loading content..." />
 
-            <TextView
-                android:id="@+id/browserTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textColor="@color/soft_black"
-                android:fontFamily="monospace"
-                android:padding="16dp"
-                android:background="@color/pastel_yellow"
-                android:text="🔄 Loading magical content..." />
-
-        </ScrollView>
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

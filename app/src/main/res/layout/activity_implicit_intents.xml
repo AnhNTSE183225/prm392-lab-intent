@@ -4,78 +4,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/soft_gradient_background"
-    android:padding="24dp">
+    android:padding="32dp">
 
-    <!-- Header Card -->
-    <LinearLayout
+    <!-- Header -->
+    <TextView
+        style="@style/SwissText.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginBottom="24dp">
+        android:text="INTENTS"
+        android:textSize="36sp"
+        android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="✨ Magic Intent Selector"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose your magical intent from the enchanted list!"
-            android:textSize="14sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:textStyle="italic"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-    <!-- Selection Card -->
-    <LinearLayout
+    <TextView
+        style="@style/SwissText.Subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:text="Implicit intent selection"
+        android:layout_marginBottom="48dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🎯 Select an Intent Type:"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="16dp" />
+    <!-- Intent Selection -->
+    <TextView
+        style="@style/SwissText.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT INTENT TYPE"
+        android:layout_marginBottom="16dp" />
 
-        <Spinner
-            android:id="@+id/intentSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sketch_input_field_selector"
-            android:layout_marginBottom="24dp"
-            android:minHeight="50dp" />
+    <Spinner
+        android:id="@+id/intentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_input_field_selector"
+        android:layout_marginBottom="36dp"
+        android:minHeight="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
 
-        <Button
-            android:id="@+id/triggerButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sketch_button_purple_selector"
-            android:onClick="onClick"
-            android:text="🚀 Trigger Intent Magic!"
-            android:textColor="@color/soft_black"
-            android:textSize="18sp"
-            android:fontFamily="serif"
-            android:textStyle="bold"
-            android:elevation="4dp" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/triggerButton"
+        style="@style/SwissButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Launch Intent" />
 
 </LinearLayout>

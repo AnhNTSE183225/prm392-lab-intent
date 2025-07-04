@@ -4,125 +4,70 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/soft_gradient_background"
-    android:padding="24dp">
+    android:padding="32dp">
 
-    <!-- Header Card -->
-    <LinearLayout
+    <!-- Header -->
+    <TextView
+        style="@style/SwissText.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginBottom="24dp">
+        android:text="RESULT"
+        android:textSize="36sp"
+        android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="🎯 Result Station"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="See what you sent and send something back!"
-            android:textSize="14sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:textStyle="italic"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-    <!-- Received Data Card -->
-    <LinearLayout
+    <TextView
+        style="@style/SwissText.Subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:text="Data from previous activity"
+        android:layout_marginBottom="48dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="📨 Message received:"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="12dp" />
-
-        <TextView
-            android:id="@+id/displayintentextra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Input"
-            android:textSize="16sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:background="@drawable/sketch_content_card"
-            android:layout_marginBottom="16dp" />
-
-    </LinearLayout>
-
-    <!-- Return Value Card -->
-    <LinearLayout
+    <!-- Received Data Display -->
+    <TextView
+        style="@style/SwissText.Body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:text="RECEIVED DATA"
+        android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="💌 Send a reply:"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="12dp" />
-
-        <EditText
-            android:id="@+id/returnValue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sketch_input_field_selector"
-            android:hint="✏️ Type your magical reply here..."
-            android:textSize="16sp"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:minHeight="60dp"
-            android:gravity="center_vertical">
-            <requestFocus />
-        </EditText>
-
-    </LinearLayout>
-
-    <!-- Action Button -->
-    <LinearLayout
+    <TextView
+        android:id="@+id/displayintentextra"
+        style="@style/SwissText.Body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:background="@drawable/sketch_input_field_selector"
+        android:padding="16dp"
+        android:layout_marginBottom="48dp" />
 
-        <Button
-            android:id="@+id/finishButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sketch_button_green_selector"
-            android:text="🏠 Return to Main"
-            android:textColor="@color/soft_black"
-            android:textSize="18sp"
-            android:fontFamily="serif"
-            android:textStyle="bold"
-            android:onClick="onFinishClick"
-            android:elevation="4dp"
-            android:paddingLeft="32dp"
-            android:paddingRight="32dp" />
+    <!-- Return Data Section -->
+    <TextView
+        style="@style/SwissText.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RETURN DATA"
+        android:layout_marginBottom="16dp" />
 
-    </LinearLayout>
+    <EditText
+        android:id="@+id/returnValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sketch_input_field_selector"
+        android:hint="Enter return value"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:minHeight="48dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="48dp">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/finishbutton"
+        style="@style/SwissButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onFinishClick"
+        android:text="Return to Main" />
 
 </LinearLayout>

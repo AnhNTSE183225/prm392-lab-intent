@@ -4,73 +4,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/soft_gradient_background"
-    android:padding="24dp">
+    android:padding="32dp">
 
-    <!-- Header Card -->
-    <LinearLayout
+    <!-- Header -->
+    <TextView
+        style="@style/SwissText.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_marginBottom="24dp">
+        android:text="SHARE"
+        android:textSize="36sp"
+        android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="📤 Share Catcher"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="8dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Catching magical messages from other apps!"
-            android:textSize="14sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:textStyle="italic"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-    <!-- Content Card -->
-    <LinearLayout
+    <TextView
+        style="@style/SwissText.Subtitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/sketch_card_background"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Content received from other apps"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Content Display -->
+    <TextView
+        style="@style/SwissText.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHARED CONTENT"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="💌 Shared Content:"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="16dp" />
-
-        <ScrollView
+            android:id="@+id/shareTextView"
+            style="@style/SwissText.Body"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="@drawable/sketch_input_field_selector"
+            android:padding="16dp"
+            android:text="Waiting for shared content..." />
 
-            <TextView
-                android:id="@+id/shareTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textColor="@color/soft_black"
-                android:fontFamily="serif"
-                android:padding="16dp"
-                android:background="@color/pastel_mint"
-                android:text="📩 Waiting for shared content..." />
-
-        </ScrollView>
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Original colors -->
+    <!-- Swiss Design Color Palette - Minimalist Black and White -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="swiss_white">#FAFAFA</color>
+    <color name="swiss_light_gray">#F0F0F0</color>
+    <color name="swiss_gray">#CCCCCC</color>
+    <color name="swiss_medium_gray">#999999</color>
+    <color name="swiss_dark_gray">#555555</color>
+    <color name="swiss_near_black">#212121</color>
     
-    <!-- Pastel Color Palette -->
-    <color name="pastel_pink">#FFE5E5</color>
-    <color name="pastel_blue">#E5F3FF</color>
-    <color name="pastel_green">#E8F5E8</color>
-    <color name="pastel_yellow">#FFF8E1</color>
-    <color name="pastel_purple">#F3E5F5</color>
-    <color name="pastel_orange">#FFE8CC</color>
-    <color name="pastel_mint">#E0F2F1</color>
-    <color name="pastel_peach">#FFEBEE</color>
+    <!-- Accent color - Single bold accent -->
+    <color name="swiss_red">#FF0000</color>
     
-    <!-- Soft Neutrals -->
-    <color name="soft_white">#FEFEFE</color>
-    <color name="soft_gray">#F5F5F5</color>
-    <color name="warm_gray">#E8E8E8</color>
-    <color name="dark_gray">#666666</color>
-    <color name="soft_black">#333333</color>
+    <!-- Legacy colors (kept for compatibility) -->
+    <color name="soft_white">@color/swiss_white</color>
+    <color name="soft_gray">@color/swiss_light_gray</color>
+    <color name="warm_gray">@color/swiss_gray</color>
+    <color name="dark_gray">@color/swiss_dark_gray</color>
+    <color name="soft_black">@color/swiss_near_black</color>
+    <color name="pastel_peach">@color/swiss_white</color>
+    <color name="pastel_blue">@color/swiss_light_gray</color>
+    <color name="pastel_green">@color/swiss_light_gray</color>
+    <color name="pastel_yellow">@color/swiss_light_gray</color>
+    <color name="pastel_purple">@color/swiss_light_gray</color>
+    <color name="pastel_pink">@color/swiss_light_gray</color>
+    <color name="sketch_border">@color/swiss_gray</color>
     
-    <!-- Sketch-style borders -->
-    <color name="sketch_border">#CCCCCC</color>
-    <color name="sketch_shadow">#E0E0E0</color>
-    
-    <!-- Primary colors -->
+    <!-- Missing colors that are still referenced -->
     <color name="primary_pink">#FFB6C1</color>
     <color name="primary_blue">#87CEEB</color>
     <color name="primary_green">#98FB98</color>
-    
-    <!-- Accent colors -->
     <color name="accent_coral">#FF7F7F</color>
     <color name="accent_lavender">#E6E6FA</color>
     <color name="accent_mint">#98FB98</color>
