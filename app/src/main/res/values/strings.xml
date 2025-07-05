@@ -1,5 +1,27 @@
 <resources>
-    <string name="app_name">lab-2-intent</string>
+    <string name="app_name">INTENT_ARCADE</string>
+    
+    <!-- Retro Arcade Strings -->
+    <string name="arcade_title">⚡ INTENT ARCADE ⚡</string>
+    <string name="arcade_subtitle">*** RETRO GAMING STYLE ***</string>
+    <string name="input_label">*** INPUT DATA ***</string>
+    <string name="input_hint">*** ENTER_MESSAGE ***</string>
+    <string name="level_select">*** SELECT LEVEL ***</string>
+    <string name="result_title">*** RESULT_SCREEN ***</string>
+    <string name="data_complete">*** DATA_TRANSFER_COMPLETE ***</string>
+    <string name="received_label">*** RECEIVED_DATA ***</string>
+    <string name="reply_label">*** SEND_REPLY ***</string>
+    <string name="reply_hint">*** ENTER_REPLY ***</string>
+    <string name="sprite_label">*** SELECTED_SPRITE ***</string>
+    <string name="no_sprite">*** NO_SPRITE_LOADED ***</string>
+    
+    <!-- Arcade Level Names -->
+    <string name="level_6">LVL 6: EXPLICIT_INTENT</string>
+    <string name="level_7">LVL 7: SHARE_DATA</string>
+    <string name="level_8">LVL 8: OPEN_BROWSER</string>
+    <string name="level_9">LVL 9: PICK_IMAGE</string>
+    <string name="level_10">LVL 10: IMPLICIT_INTENTS</string>
+    <string name="return_main">RETURN_TO_MAIN</string>
     
     <string-array name="intents">
         <item>Open Browser</item>

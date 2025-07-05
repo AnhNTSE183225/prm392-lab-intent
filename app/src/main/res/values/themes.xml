@@ -1,21 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Lab2intent" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Soft, friendly color palette -->
-        <item name="colorPrimary">@color/primary_pink</item>
-        <item name="colorPrimaryContainer">@color/accent_coral</item>
-        <item name="colorSecondary">@color/primary_blue</item>
-        <item name="colorSecondaryContainer">@color/accent_lavender</item>
-        <item name="android:colorAccent">@color/accent_mint</item>
-        <item name="colorSurface">@color/soft_white</item>
-        <item name="android:colorBackground">@color/soft_gray</item>
-        <item name="colorOnPrimary">@color/soft_black</item>
-        <item name="colorOnSecondary">@color/soft_black</item>
-        <item name="colorOnSurface">@color/soft_black</item>
-        <item name="colorOnBackground">@color/soft_black</item>
-        <item name="android:windowBackground">@color/soft_white</item>
-        <item name="android:textColor">@color/soft_black</item>
-        <item name="android:textColorHint">@color/dark_gray</item>
+        <!-- Retro 90s Arcade color palette -->
+        <item name="colorPrimary">@color/neon_cyan</item>
+        <item name="colorPrimaryContainer">@color/arcade_blue</item>
+        <item name="colorSecondary">@color/neon_pink</item>
+        <item name="colorSecondaryContainer">@color/arcade_pink</item>
+        <item name="android:colorAccent">@color/neon_green</item>
+        <item name="colorSurface">@color/retro_dark_gray</item>
+        <item name="android:colorBackground">@color/retro_dark_blue</item>
+        <item name="colorOnPrimary">@color/arcade_text_dark</item>
+        <item name="colorOnSecondary">@color/arcade_text_dark</item>
+        <item name="colorOnSurface">@color/arcade_text_light</item>
+        <item name="colorOnBackground">@color/arcade_text_light</item>
+        <item name="android:windowBackground">@color/retro_dark_blue</item>
+        <item name="android:textColor">@color/arcade_text_light</item>
+        <item name="android:textColorHint">@color/pixel_mid_gray</item>
     </style>
 
     <style name="Theme.Lab2intent" parent="Base.Theme.Lab2intent" />

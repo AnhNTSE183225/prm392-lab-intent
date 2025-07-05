@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/soft_gradient_background">
+    android:background="@drawable/arcade_pattern">
 
     <RelativeLayout
         android:id="@+id/main"
@@ -17,7 +17,7 @@
             android:id="@+id/titleCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/sketch_card_background"
+            android:background="@drawable/arcade_card_bg"
             android:gravity="center"
             android:orientation="vertical"
             android:layout_marginBottom="24dp">
@@ -26,22 +26,22 @@
                 android:id="@+id/titleText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✨ Intent Adventures ✨"
-                android:textSize="28sp"
+                android:text="⚡ INTENT ARCADE ⚡"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="@color/soft_black"
+                android:textColor="@color/neon_cyan"
                 android:gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="monospace"
                 android:layout_marginBottom="8dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Discover the magic of Android intents!"
-                android:textSize="16sp"
-                android:textColor="@color/dark_gray"
+                android:text="*** RETRO GAMING STYLE ***"
+                android:textSize="14sp"
+                android:textColor="@color/neon_green"
                 android:gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="monospace"
                 android:textStyle="italic" />
 
         </LinearLayout>
@@ -52,30 +52,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/titleCard"
-            android:background="@drawable/sketch_card_background"
+            android:background="@drawable/arcade_card_bg"
             android:orientation="vertical"
             android:layout_marginBottom="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📝 Write your message:"
-                android:textSize="18sp"
+                android:text="*** INPUT DATA ***"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/soft_black"
-                android:fontFamily="serif"
+                android:textColor="@color/neon_yellow"
+                android:fontFamily="monospace"
                 android:layout_marginBottom="12dp" />
 
             <EditText
                 android:id="@+id/inputforintent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/sketch_input_field_selector"
-                android:text="First Activity"
+                android:background="@drawable/arcade_input_bg"
+                android:text="PLAYER_1"
                 android:textSize="18sp"
-                android:textColor="@color/soft_black"
-                android:hint="✏️ Enter your magical message here..."
-                android:fontFamily="serif"
+                android:textColor="@color/neon_green"
+                android:hint="*** ENTER_MESSAGE ***"
+                android:fontFamily="monospace"
                 android:minHeight="60dp"
                 android:gravity="center_vertical" />
 
@@ -93,11 +93,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🎯 Choose your adventure:"
-                android:textSize="20sp"
+                android:text="*** SELECT LEVEL ***"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/soft_black"
-                android:fontFamily="serif"
+                android:textColor="@color/neon_pink"
+                android:fontFamily="monospace"
                 android:layout_marginBottom="16dp"
                 android:layout_gravity="center" />
 
@@ -106,12 +106,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/sketch_button_pink_selector"
+                android:background="@drawable/arcade_button"
                 android:onClick="onClick"
-                android:text="🚀 Exercise 6: Explicit Intent"
-                android:textColor="@color/soft_black"
-                android:textSize="16sp"
-                android:fontFamily="serif"
+                android:text="LVL 6: EXPLICIT_INTENT"
+                android:textColor="@color/arcade_text_dark"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:elevation="4dp" />
 
@@ -120,12 +120,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/sketch_button_blue_selector"
+                android:background="@drawable/arcade_button_blue"
                 android:onClick="shareData"
-                android:text="📤 Exercise 7: Share Data"
-                android:textColor="@color/soft_black"
-                android:textSize="16sp"
-                android:fontFamily="serif"
+                android:text="LVL 7: SHARE_DATA"
+                android:textColor="@color/arcade_text_dark"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:elevation="4dp" />
 
@@ -134,12 +134,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/sketch_button_green_selector"
+                android:background="@drawable/arcade_button_green"
                 android:onClick="openBrowser"
-                android:text="🌐 Exercise 8: Open Browser"
-                android:textColor="@color/soft_black"
-                android:textSize="16sp"
-                android:fontFamily="serif"
+                android:text="LVL 8: OPEN_BROWSER"
+                android:textColor="@color/arcade_text_dark"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:elevation="4dp" />
 
@@ -148,12 +148,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/sketch_button_yellow_selector"
+                android:background="@drawable/arcade_button_yellow"
                 android:onClick="pickImage"
-                android:text="🖼️ Exercise 9: Pick Image"
-                android:textColor="@color/soft_black"
-                android:textSize="16sp"
-                android:fontFamily="serif"
+                android:text="LVL 9: PICK_IMAGE"
+                android:textColor="@color/arcade_text_dark"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:elevation="4dp" />
 
@@ -162,12 +162,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                android:background="@drawable/sketch_button_purple_selector"
+                android:background="@drawable/arcade_button_purple"
                 android:onClick="showImplicitIntents"
-                android:text="✨ Exercise 10: Implicit Intents"
-                android:textColor="@color/soft_black"
-                android:textSize="16sp"
-                android:fontFamily="serif"
+                android:text="LVL 10: IMPLICIT_INTENTS"
+                android:textColor="@color/arcade_text_dark"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
                 android:textStyle="bold"
                 android:elevation="4dp" />
 
@@ -179,25 +179,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/buttonsSection"
-            android:background="@drawable/sketch_card_background"
+            android:background="@drawable/arcade_card_bg"
             android:orientation="vertical"
             android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="🎨 Your selected artwork:"
-                android:textSize="18sp"
+                android:text="*** SELECTED_SPRITE ***"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/soft_black"
-                android:fontFamily="serif"
+                android:textColor="@color/neon_orange"
+                android:fontFamily="monospace"
                 android:layout_marginBottom="16dp" />
 
             <ImageView
                 android:id="@+id/selectedImage"
                 android:layout_width="220dp"
                 android:layout_height="220dp"
-                android:background="@drawable/sketch_image_frame"
+                android:background="@drawable/arcade_card_bg"
                 android:scaleType="centerCrop"
                 android:visibility="gone"
                 android:elevation="6dp" />
@@ -205,10 +205,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="📸 No image selected yet"
-                android:textSize="14sp"
-                android:textColor="@color/dark_gray"
-                android:fontFamily="serif"
+                android:text="*** NO_SPRITE_LOADED ***"
+                android:textSize="12sp"
+                android:textColor="@color/pixel_mid_gray"
+                android:fontFamily="monospace"
                 android:textStyle="italic"
                 android:layout_marginTop="8dp" />
 

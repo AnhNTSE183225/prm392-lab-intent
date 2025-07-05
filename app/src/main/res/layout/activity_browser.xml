@@ -3,14 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/soft_gradient_background"
+    android:background="@drawable/arcade_pattern"
     android:padding="24dp">
 
     <!-- Header Card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
+        android:background="@drawable/arcade_card_bg"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_marginBottom="24dp">
@@ -22,7 +22,7 @@
             android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="@color/soft_black"
-            android:fontFamily="serif"
+            android:fontFamily="monospace"
             android:layout_marginBottom="8dp" />
 
         <TextView
@@ -31,7 +31,7 @@
             android:text="Fetching web content with a sprinkle of magic!"
             android:textSize="14sp"
             android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
+            android:fontFamily="monospace"
             android:textStyle="italic"
             android:gravity="center" />
 
@@ -41,7 +41,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/sketch_card_background"
+        android:background="@drawable/arcade_card_bg"
         android:orientation="vertical">
 
         <TextView
@@ -51,7 +51,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/soft_black"
-            android:fontFamily="serif"
+            android:fontFamily="monospace"
             android:layout_marginBottom="16dp" />
 
         <ScrollView
@@ -66,7 +66,7 @@
                 android:textColor="@color/soft_black"
                 android:fontFamily="monospace"
                 android:padding="16dp"
-                android:background="@color/pastel_yellow"
+                android:background="@color/arcade_yellow"
                 android:text="🔄 Loading magical content..." />
 
         </ScrollView>

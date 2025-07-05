@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow/depth -->
+    <item android:top="0dp" android:left="0dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pixel_shadow" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    
+    <!-- Main card background -->
+    <item android:top="0dp" android:left="0dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/retro_dark_gray" />
+            <corners android:radius="0dp" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/neon_cyan" />
+        </shape>
+    </item>
+    
+    <!-- Inner glow effect -->
+    <item android:top="3dp" android:left="3dp" android:right="7dp" android:bottom="7dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="@color/pixel_highlight" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</layer-list>
