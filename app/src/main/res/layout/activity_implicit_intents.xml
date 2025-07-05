@@ -3,36 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/soft_gradient_background"
-    android:padding="24dp">
+    android:background="@drawable/cyberpunk_background"
+    android:padding="16dp">
 
     <!-- Header Card -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
+        android:background="@drawable/cyberpunk_card_background"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="24dp">
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="✨ Magic Intent Selector"
-            android:textSize="26sp"
+            android:text="SYSTEM OVERRIDE"
+            android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="8dp" />
+            android:textColor="@color/cyber_neon_orange"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"
+            android:shadowColor="@color/cyber_neon_orange"
+            android:shadowRadius="8"
+            android:shadowDx="0"
+            android:shadowDy="0" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choose your magical intent from the enchanted list!"
+            android:text="SELECT TARGET SYSTEM"
             android:textSize="14sp"
-            android:textColor="@color/dark_gray"
-            android:fontFamily="serif"
-            android:textStyle="italic"
+            android:textColor="@color/text_secondary"
+            android:fontFamily="monospace"
+            android:letterSpacing="0.1"
             android:gravity="center" />
 
     </LinearLayout>
@@ -41,41 +46,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/sketch_card_background"
+        android:background="@drawable/cyberpunk_card_background"
         android:orientation="vertical"
-        android:layout_marginBottom="24dp">
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🎯 Select an Intent Type:"
-            android:textSize="20sp"
+            android:text="// SELECT PROTOCOL //"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/soft_black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="16dp" />
+            android:textColor="@color/cyber_neon_green"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="12dp" />
 
         <Spinner
             android:id="@+id/intentSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/sketch_input_field_selector"
-            android:layout_marginBottom="24dp"
-            android:minHeight="50dp" />
-
-        <Button
-            android:id="@+id/triggerButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sketch_button_purple_selector"
-            android:onClick="onClick"
-            android:text="🚀 Trigger Intent Magic!"
-            android:textColor="@color/soft_black"
-            android:textSize="18sp"
-            android:fontFamily="serif"
-            android:textStyle="bold"
-            android:elevation="4dp" />
+            android:background="@drawable/cyberpunk_input_background"
+            android:minHeight="48dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
 
     </LinearLayout>
+
+    <!-- Execute Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CyberpunkButtonStyle"
+        android:onClick="onClick"
+        android:text="[EXECUTE PROTOCOL]" />
 
 </LinearLayout>

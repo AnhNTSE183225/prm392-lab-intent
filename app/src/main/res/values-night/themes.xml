@@ -1,7 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Lab2intent" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Cyberpunk color theme (same as day theme) -->
+        <item name="colorPrimary">@color/cyber_neon_blue</item>
+        <item name="colorPrimaryContainer">@color/cyber_neon_pink</item>
+        <item name="colorSecondary">@color/cyber_neon_yellow</item>
+        <item name="colorSecondaryContainer">@color/cyber_neon_purple</item>
+        <item name="android:colorAccent">@color/cyber_neon_green</item>
+        <item name="colorSurface">@color/cyber_dark_surface</item>
+        <item name="android:colorBackground">@color/cyber_dark_bg</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="android:windowBackground">@color/cyber_darker_bg</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:statusBarColor">@color/cyber_darker_bg</item>
+        <item name="android:navigationBarColor">@color/cyber_darker_bg</item>
     </style>
 </resources>

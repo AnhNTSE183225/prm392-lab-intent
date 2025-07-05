@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Original colors -->
+    <!-- Base colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <!-- Pastel Color Palette -->
-    <color name="pastel_pink">#FFE5E5</color>
-    <color name="pastel_blue">#E5F3FF</color>
-    <color name="pastel_green">#E8F5E8</color>
-    <color name="pastel_yellow">#FFF8E1</color>
-    <color name="pastel_purple">#F3E5F5</color>
-    <color name="pastel_orange">#FFE8CC</color>
-    <color name="pastel_mint">#E0F2F1</color>
-    <color name="pastel_peach">#FFEBEE</color>
+    <!-- Cyberpunk Color Palette -->
+    <color name="cyber_neon_pink">#FF00FF</color>
+    <color name="cyber_neon_blue">#00FFFF</color>
+    <color name="cyber_neon_yellow">#FFFF00</color>
+    <color name="cyber_neon_green">#39FF14</color>
+    <color name="cyber_neon_purple">#B026FF</color>
+    <color name="cyber_neon_orange">#FF6B00</color>
     
-    <!-- Soft Neutrals -->
-    <color name="soft_white">#FEFEFE</color>
-    <color name="soft_gray">#F5F5F5</color>
-    <color name="warm_gray">#E8E8E8</color>
-    <color name="dark_gray">#666666</color>
-    <color name="soft_black">#333333</color>
+    <!-- Dark Backgrounds -->
+    <color name="cyber_dark_bg">#0A0A12</color>
+    <color name="cyber_darker_bg">#050508</color>
+    <color name="cyber_dark_accent">#1A1A2E</color>
+    <color name="cyber_dark_surface">#12121F</color>
     
-    <!-- Sketch-style borders -->
-    <color name="sketch_border">#CCCCCC</color>
-    <color name="sketch_shadow">#E0E0E0</color>
+    <!-- Holographic Effects -->
+    <color name="holo_blue_trans">#8000FFFF</color>
+    <color name="holo_pink_trans">#80FF00FF</color>
+    <color name="holo_yellow_trans">#80FFFF00</color>
     
-    <!-- Primary colors -->
-    <color name="primary_pink">#FFB6C1</color>
-    <color name="primary_blue">#87CEEB</color>
-    <color name="primary_green">#98FB98</color>
-    
-    <!-- Accent colors -->
-    <color name="accent_coral">#FF7F7F</color>
-    <color name="accent_lavender">#E6E6FA</color>
-    <color name="accent_mint">#98FB98</color>
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#80FFFFFF</color>
+    <color name="text_accent_neon">#00FFFF</color>
+
+    <!-- UI Elements -->
+    <color name="card_bg">#12121F</color>
+    <color name="button_pressed">#1A1A2E</color>
+    <color name="button_default">#0A0A12</color>
+    <color name="input_field_bg">#1A1A2E</color>
 </resources>

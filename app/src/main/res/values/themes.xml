@@ -1,22 +1,40 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Lab2intent" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Soft, friendly color palette -->
-        <item name="colorPrimary">@color/primary_pink</item>
-        <item name="colorPrimaryContainer">@color/accent_coral</item>
-        <item name="colorSecondary">@color/primary_blue</item>
-        <item name="colorSecondaryContainer">@color/accent_lavender</item>
-        <item name="android:colorAccent">@color/accent_mint</item>
-        <item name="colorSurface">@color/soft_white</item>
-        <item name="android:colorBackground">@color/soft_gray</item>
-        <item name="colorOnPrimary">@color/soft_black</item>
-        <item name="colorOnSecondary">@color/soft_black</item>
-        <item name="colorOnSurface">@color/soft_black</item>
-        <item name="colorOnBackground">@color/soft_black</item>
-        <item name="android:windowBackground">@color/soft_white</item>
-        <item name="android:textColor">@color/soft_black</item>
-        <item name="android:textColorHint">@color/dark_gray</item>
+        <!-- Cyberpunk color theme -->
+        <item name="colorPrimary">@color/cyber_neon_blue</item>
+        <item name="colorPrimaryContainer">@color/cyber_neon_pink</item>
+        <item name="colorSecondary">@color/cyber_neon_yellow</item>
+        <item name="colorSecondaryContainer">@color/cyber_neon_purple</item>
+        <item name="android:colorAccent">@color/cyber_neon_green</item>
+        <item name="colorSurface">@color/cyber_dark_surface</item>
+        <item name="android:colorBackground">@color/cyber_dark_bg</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="android:windowBackground">@color/cyber_darker_bg</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:statusBarColor">@color/cyber_darker_bg</item>
+        <item name="android:navigationBarColor">@color/cyber_darker_bg</item>
     </style>
 
     <style name="Theme.Lab2intent" parent="Base.Theme.Lab2intent" />
+    
+    <!-- Custom button style -->
+    <style name="CyberpunkButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/cyberpunk_button_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
 </resources>
